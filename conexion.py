@@ -11,7 +11,7 @@ class Conexion():
         self.conexion=mysql.connector.connect(
             host='127.0.0.1',
             user='root',
-            passwd='cfp402',
+            passwd='tu_clave',
             db='estacionamiento'
         )
         
@@ -20,4 +20,5 @@ class Conexion():
     
     def desconectar(self):
         self.conexion=None
+
         self.cursor=None
